@@ -8,8 +8,15 @@
     */
 
     //Entrada
-
-
+    let cores = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"];
+    let preferidas = [];
+    for (const cor of cores) {
+        const gosta = prompt(`Você gosta da cor ${cor}? S-Sim - N-Não`);
+        if (gosta == "S") {
+            preferidas.push(cor);
+        }
+        }
+    alert(`As cores favoritas são ${preferidas.join(", ")}, sendo elas ${preferidas.length} cores.`)
     //Processamento
 
 

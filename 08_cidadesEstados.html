@@ -8,8 +8,23 @@
     */
 
     //Entrada
-
-
+    let cidades = ["Porto Alegre", "Curitiba", "Florianópolis", "Joinville", "Blumenau", "Gramado", "Santa Maria", "Londrina", "Itajaí"];
+    let sc = [];
+    let rs = [];
+    let pr = [];
+    for (let cidade of cidades) {
+        const estado = prompt(`A cidade ${cidade} se localiza em que estado?`).toLowerCase()
+        if(cidade=="pr"){
+            pr.push(cidade)
+        }
+        else if (cidade=="sc"){
+            sc.push(cidade)
+        }
+        else if (cidade=="rs"){
+            rs.push(cidade)
+        }
+    }
+    alert(`blalblabla falta o alert`)
     //Processamento
 
 

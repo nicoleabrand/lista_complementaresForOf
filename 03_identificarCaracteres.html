@@ -6,12 +6,19 @@
     */
 
     //Entrada
-    const word = prompt(`Informe uma palavra`)
-    palavra=[word]
-    vogais= []
-    for (const item of palavra) {
-    
+    const word = prompt(`Informe uma palavra`).toLowerCase()
+    let vogais= 0;
+    let consoantes= 0;
+    let todasVogais = ["a", "e", "i", "o", "u"];
+    for (const item of word) {
+        if (todasVogais.includes(item)) {
+            vogais = vogais + 1;
+        }
+        else {
+            consoantes = consoantes+1
+        }
     }
+    alert(`A quantidade de vogais é de ${vogais} e a de consoantes é de ${consoantes}`)
 
     //Processamento
 
